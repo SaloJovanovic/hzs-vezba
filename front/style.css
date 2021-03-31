@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    font-weight: bold;
+}
+
+body {
+    background-color: #b2c3d5;
+}
+
+.sidenav {
+    display: table;
+    background-color: #231f20;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 60px;
+    height: 100%;
+    overflow:hidden;
+}
+
+.sidenav-container {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.description-sidenav {
+    display: table;
+    background-color: transparent;
+    position:fixed;
+    height: 100%;
+}
+
+.description-sidenav p {
+    color: black !important;
+    text-align: center;
+    height: 45px;
+}
+
+.description-sidenav .navitem-container {
+    display: none;
+    background-color: transparent;
+}
+
+.navigation-container {
+    display:table-cell;
+    vertical-align:middle;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 60px;
+    z-index: 4;
+}
+
+.navitem-container {
+    align-items: center;
+    display: flex;
+    vertical-align: middle;    
+    padding: 10px;
+    justify-content: center;
+    background-color: #231f20;
+
+    transition: all 0.25s ease;
+}
+
+..description-sidenav .navitem-container.visible {  
+    display: block;
+}
+
+.navitem-container:hover {
+    background-color: black;
+}
+
+.sidenav p {
+    position: absolute;
+    z-index: 5;
+    right: -30px;
+    color: white;
+}
+
+.navitem {
+    height: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45px;
+}
+
+.banner {
+    background-color: #fce373;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.banner h1{
+    color: #231f20;
+    text-align: center;
+    font-size: 10em;
+}
+
+.banner p {
+    font-size: 1.3em;
+}
+
+.banner .main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.btn {
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    color: #fce373;
+    padding: 15px;
+    background-color: #231f20;
+}
+
+.banner .buttons {
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle .buttons {
+    margin-top: 15px;
+    margin-left: 35%;
+}
+
+.middle .btn {
+    color: #231f20;
+    background-color: #fce373;
+}
